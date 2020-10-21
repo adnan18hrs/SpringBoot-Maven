@@ -8,6 +8,6 @@ public class MyFirstBootAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyFirstBootAppApplication.class, args);
-		System.out.println("Hello_World");
+		System.out.println("Hello World");
 	}
 }
