@@ -20,7 +20,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Main{
 
 	public static void main(String[] args) {
-		//TODO Auto-generated method stud
+		//here SpringApplication also do same thing like AnnotationConfigApplicationContext(config.class)
+		//con is a variable which point a container(contain bean of config class) created by SpringApplication  
 		
 		ApplicationContext con = SpringApplication.run(Main.class, args);
 		System.out.println("Hello I am Main");
