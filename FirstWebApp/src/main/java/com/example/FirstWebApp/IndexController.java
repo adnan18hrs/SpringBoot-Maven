@@ -1,7 +1,8 @@
 package com.example.FirstWebApp;
 
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class IndexController {
@@ -10,6 +11,14 @@ public class IndexController {
 	public String function() {
 		return "index";
 	}
+	
+	@RequestMapping("/result")
+	public String function(HttpServletRequest request) {
+		System.out.println("value: "+request.getParamater("data"));
+		return "result";
+	}
+	
+	
 	/*
 	@RequestMapping("/url_index1")
 	public String function1() {

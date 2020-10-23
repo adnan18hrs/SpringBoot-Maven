@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	WELCOME TO HOME PAGE !!
-	
-	<br>
-	<a href="result?data=5"> send data to server</a>
+
 </body>
 </html>
