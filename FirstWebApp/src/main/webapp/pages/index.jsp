@@ -10,6 +10,6 @@
 	WELCOME TO HOME PAGE !!
 	
 	<br>
-	<a href="result?data=5"> send data to server</a>
+	<a href="result?data=500"> send data to server</a>
 </body>
 </html>
