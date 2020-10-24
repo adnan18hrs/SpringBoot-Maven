@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	WELCOME TO RESULT...!!
+	<br>
+	<a href="url_index"> Want to start front controller(url_index) then click</a>
+	<br> Your value is : ${value}
 </body>
 </html>

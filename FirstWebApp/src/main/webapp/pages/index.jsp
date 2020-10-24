@@ -8,8 +8,8 @@
 </head>
 <body>
 	WELCOME TO HOME PAGE !!
-	
 	<br>
-	<a href="result?data=500"> send data to server</a>
+	<a href="url_result?myvalue=500"> send data to server</a>
+	<br> Your output is : ${value}
 </body>
 </html>
