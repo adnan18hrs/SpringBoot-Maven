@@ -1,12 +1,19 @@
 package com.example.SmallWebApp;
+//package dao;
 
+//import com.example.SmallWebApp.dao.UserRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+
 @Controller
 public class RegistrationController {
+	
+	@Autowired
+	UserRepo repo;
 	
 	@RequestMapping("/regforms")
 	public String register() {
@@ -35,7 +42,9 @@ public class RegistrationController {
 //	}
 	
 	@RequestMapping("/userDetail")
-	public String userInfo() {
+	public String userInfo(UserRegistration reg) {
+		//saving data coming from client(registration.jsp)
+		repo.save(reg);
 		System.out.println("UserDetails is triggered");
 		return "operation";
 	}

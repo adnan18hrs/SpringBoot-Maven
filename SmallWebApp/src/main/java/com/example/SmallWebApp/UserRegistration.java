@@ -1,4 +1,5 @@
 package com.example.SmallWebApp;
+//package dao;
 
 import static javax.persistence.GenerationType.IDENTITY;
 import java.util.Arrays;
