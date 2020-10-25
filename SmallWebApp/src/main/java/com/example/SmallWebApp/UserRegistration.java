@@ -1,6 +1,20 @@
 package com.example.SmallWebApp;
 
+import static javax.persistence.GenerationType.IDENTITY;
+import java.util.Arrays;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.GenerationType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+@Table(name = "mytable")
 public class UserRegistration {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long UID;
 	private String UName;
 	private String EmailId;
 	private String Password;

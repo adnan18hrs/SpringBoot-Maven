@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1> Data for user details are here : </h1>
-	${regObj}
+	<h1> USER DATA </h1><br>
+	user name   : ${regObj.name}<br>
+	User Email : ${regObj.email}<br>
+	Gender     : ${regObj.gender}<br>
+	Hobby      : ${regObj.hobbies[0]}, ${regObj.hobbies[1]}<br>
 </body>
 </html>

@@ -67,7 +67,7 @@ public class IndexController {
 	public ModelAndView function(@RequestParam("myvalue") String data) {
 		System.out.println("URL_RESULT is triggered..");
 		
-		ModelAndView mv = new ModelAndView();
+		ModelAndView mv = new ModelAndView("/result");
 		mv.addObject("value",data);
 		return mv;
 	}

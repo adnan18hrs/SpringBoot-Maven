@@ -9,8 +9,8 @@
 <body>
 	<h1> Registration form</h1>
 	
-	<form action="userDetails">
-		Username : <input id="username" name="UName"/><br>
+	<form action="userDetail">
+		user name : <input id="username" name="UName"/><br>
 	    Email Id : <input id="emailid" name="EmailId"/><br>
 		Password : <input type="password" id="Password" name="Password"/><br>
 		Gender   : <input type="radio" name="Gender" value="1" checked=true/>Male
