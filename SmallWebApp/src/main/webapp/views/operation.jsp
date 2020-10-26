@@ -9,16 +9,17 @@
 <body>
 	<h1> Operation form</h1>
 	
-	<form action="getDetail">
+	<form action="operation">
+	
 		User By ID : <input id="uid" name="UID"/><br>
-		
 		<select name="ddlFlag"> 
 			<option value="select"> Select Records</option>
 			<option value="delete"> Delete Records</option>
 			<option value="update"> Update Records</option>
+			<option value="custom"> Custom Records</option>
 		</select><br>
-		
 		<input type="submit" value="Click Now"/><br>
+	
 	</form>
 </body>
 </html>

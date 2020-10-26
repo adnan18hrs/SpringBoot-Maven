@@ -1,5 +1,4 @@
 package com.example.SmallWebApp;
-//package dao;
 
 import static javax.persistence.GenerationType.IDENTITY;
 import java.util.Arrays;
@@ -16,6 +15,7 @@ public class UserRegistration {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long UID;
+	
 	private String UName;
 	private String EmailId;
 	private String Password;

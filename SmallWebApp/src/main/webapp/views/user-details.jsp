@@ -11,6 +11,5 @@
 	user name   : ${regObj.name}<br>
 	User Email : ${regObj.email}<br>
 	Gender     : ${regObj.gender}<br>
-	Hobby      : ${regObj.hobbies[0]}, ${regObj.hobbies[1]}<br>
 </body>
 </html>
