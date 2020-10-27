@@ -18,6 +18,7 @@
 			<option value="update"> Update Records</option>
 			<option value="custom"> Custom Records</option>
 		</select><br>
+		<%-- When Submit is used ,it hits the server with a request --%>
 		<input type="submit" value="Click Now"/><br>
 	
 	</form>
