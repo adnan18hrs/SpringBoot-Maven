@@ -20,26 +20,6 @@ public class RegistrationController {
 		return "registration";
 	}
 	
-//	@RequestMapping("/userDetail")
-//	public ModelAndView userInfo(UserRegistration reg) {
-//		System.out.println("userDetails is triggered");
-//		
-//		//ModelMap is a class
-//		ModelMap model = new ModelMap();
-//		model.addAttribute("name", reg.getUName());
-//		model.addAttribute("email", reg.getEmailId());
-//		model.addAttribute("gender", reg.getGender() == Integer.parseInt("1") ? "Male" : "Female");
-//		model.addAttribute("name", reg.getUName());
-//		model.addAttribute("hobbies", reg.getHobby());
-//		
-//		//ModelAndView is a controller return object & view as a single entity
-//		ModelAndView mv = new ModelAndView("/user-details");
-//		//tranfersing data from model to regObj
-//		mv.addObject("regObj", model);
-//		
-//		return mv;
-//	}
-	
 	@RequestMapping("/userDetail")
 	public String userInfo(UserRegistration reg) {
 		//saving data coming from client(registration.jsp)
@@ -48,10 +28,11 @@ public class RegistrationController {
 		return "operation";
 	}
 	
-	@RequestMapping("/operation")
+	@RequestMapping("/operation1")
 	public ModelAndView operation(Long UID, String ddlFlag) {
 		
 		System.out.println("Operation is triggered");
+		
 		if(ddlFlag.equals("select")) {
 			System.out.println(ddlFlag);
 			
@@ -69,9 +50,8 @@ public class RegistrationController {
 			System.out.println(ddlFlag);
 		}
 		else {
-			System.out.println(repo.findByUName("john"));
+			System.out.println(repo.selectRecordByName("yaman"));
 		}
-		
 		return new ModelAndView("operation");
 	}
 	

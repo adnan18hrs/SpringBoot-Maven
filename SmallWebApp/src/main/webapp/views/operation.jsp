@@ -9,7 +9,7 @@
 <body>
 	<h1> Operation form</h1>
 	
-	<form action="operation">
+	<form action="operation1">
 	
 		User By ID : <input id="uid" name="UID"/><br>
 		<select name="ddlFlag"> 
