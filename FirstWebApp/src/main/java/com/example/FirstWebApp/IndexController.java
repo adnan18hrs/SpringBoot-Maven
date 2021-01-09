@@ -1,5 +1,11 @@
 package com.example.FirstWebApp;
+<<<<<<< Updated upstream
 // I made this change to merge this change into master branch by using github desktop 
+=======
+//From VSC inside NewBranch now trying to merge them into master branch
+//hii
+//from github chrome making changes in this
+>>>>>>> Stashed changes
 import java.util.HashMap;
 import java.util.Map;
 
